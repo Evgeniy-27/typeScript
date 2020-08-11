@@ -1,11 +1,11 @@
 {
-  "name": "ajs",
+  "name": "type_script",
   "version": "1.0.0",
-  "description": "",
+  "description": "**Важно**: все задачи допустимо выполнять в одном GitHub репозитории.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
+    "build": "tsc",
     "lint": "eslint .",
     "test": "jest",
     "coverage": "jest --coverage",
@@ -15,7 +15,8 @@
     "preshow:doc": "npm run doc",
     "show:doc": "live-server doc",
     "preshow:dist": "npm run build",
-    "show:dist": "live-server dist"
+    "show:dist": "live-server dist",
+    "watch": "tsc -w"
   },
   "author": "coursar",
   "license": "MIT",
@@ -38,12 +39,20 @@
     "mini-css-extract-plugin": "^0.9.0",
     "ts-jest": "^24.2.0",
     "ts-loader": "^6.2.1",
-    "typescript": "^3.7.4",
+    "typescript": "^3.9.7",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
     "core-js": "^3.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evgeniy-27/typeScript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Evgeniy-27/typeScript/issues"
+  },
+  "homepage": "https://github.com/Evgeniy-27/typeScript#readme"
 }
